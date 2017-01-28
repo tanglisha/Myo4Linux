@@ -58,7 +58,7 @@ class Myo(object):
 
         print('Firmware version: %d.%d.%d.%d' % (major, minor, patch, build))
 
-        return major > 0
+        return major > 0 && minor > 4
 
     def add_listener(self, listener):
         if self.ble is not None:
